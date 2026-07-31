@@ -205,7 +205,71 @@ footer {
 /* Responsive para celulares */
 
 @media(max-width:768px){
+/* Sección Inteligencia Artificial */
 
+
+.ai-section {
+
+    padding: 80px 8%;
+
+    background: #e2e8f0;
+
+    text-align:center;
+
+}
+
+
+.ai-section h2 {
+
+    font-size:36px;
+
+    color:#0f172a;
+
+    margin-bottom:20px;
+
+}
+
+
+.ai-section > p {
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+}
+
+
+.ai-container {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+.ai-container article {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+
+@media(max-width:768px){
+
+    .ai-container {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
     nav {
 
         flex-direction: column;

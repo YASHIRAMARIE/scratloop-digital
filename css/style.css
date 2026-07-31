@@ -123,16 +123,17 @@ nav a:hover {
     text-decoration: none;
 
     font-weight: bold;
+    transition:.3s;
 
 }
 
+.button:hover{
+   background: #1d4ed8;
+    transform:translateY(-3px);
 
-.button:hover {
-
-    background: #1d4ed8;
+    box-shadow:0 10px 20px rgba(59,130,246,.35);
 
 }
-
 
 /* Servicios */
 
@@ -403,5 +404,92 @@ footer {
     margin:auto;
 
     color:#cbd5e1;
+
+}
+/* ===========================
+   MEJORAS DE NAVEGACIÓN
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:#020617;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+
+}
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav a:hover{
+
+    color:#3b82f6;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#3b82f6;
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
 
 }

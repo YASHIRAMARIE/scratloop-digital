@@ -302,3 +302,75 @@ footer {
     }
 
 }
+/* Contacto */
+
+
+.contact {
+
+    padding:80px 8%;
+
+    text-align:center;
+
+    background:#020617;
+
+    color:white;
+
+}
+
+
+.contact h2 {
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+
+.contact p {
+
+    max-width:650px;
+
+    margin:0 auto 40px;
+
+}
+
+
+.contact-buttons {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+.secondary {
+
+    background:white;
+
+    color:#020617;
+
+}
+
+
+.secondary:hover {
+
+    background:#e2e8f0;
+
+}
+
+
+@media(max-width:768px){
+
+    .contact-buttons {
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}

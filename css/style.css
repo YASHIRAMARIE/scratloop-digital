@@ -374,3 +374,34 @@ footer {
     }
 
 }
+/* PROYECTOS */
+
+.portfolio{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+    background:#0f172a;
+
+    color:white;
+
+}
+
+.portfolio h2{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.portfolio p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#cbd5e1;
+
+}

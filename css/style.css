@@ -130,15 +130,27 @@ nav{
 
 .logo{
 
-    font-size:28px;
+    display:flex;
 
-    font-weight:700;
+    align-items:center;
 
-    background:var(--gradient);
+}
 
-    -webkit-background-clip:text;
 
-    -webkit-text-fill-color:transparent;
+.logo img{
+
+    width:190px;
+
+    height:auto;
+
+    transition:.3s;
+
+}
+
+
+.logo img:hover{
+
+    transform:scale(1.05);
 
 }
 

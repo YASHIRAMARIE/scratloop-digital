@@ -528,3 +528,214 @@ nav a:hover::after{
     color:var(--text-muted);
 
 }
+/* ==================================================
+   CONTACTO
+================================================== */
+
+.contact{
+
+    text-align:center;
+
+    background:
+
+    radial-gradient(
+        circle at center,
+        rgba(0,200,255,.12),
+        transparent 40%
+    ),
+
+    var(--bg);
+
+}
+
+
+.contact h2{
+
+    font-size:clamp(2rem,5vw,3rem);
+
+    margin-bottom:20px;
+
+}
+
+
+.contact p{
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+
+    color:var(--text-muted);
+
+}
+
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+
+    background:#020617;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:35px 8%;
+
+    text-align:center;
+
+    color:var(--text-muted);
+
+}
+
+
+footer p{
+
+    font-size:.95rem;
+
+}
+
+
+/* ==================================================
+   ANIMACIONES
+================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+.hero h1{
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+.hero p{
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+.hero .button{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+
+@media(max-width:900px){
+
+
+    nav{
+
+        flex-direction:column;
+
+        gap:25px;
+
+    }
+
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:18px;
+
+    }
+
+
+    .service-container,
+
+    .ai-container,
+
+    .portfolio-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    section{
+
+        padding:70px 6%;
+
+    }
+
+
+    .contact-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .button{
+
+        width:100%;
+
+        max-width:300px;
+
+    }
+
+
+}

@@ -295,3 +295,236 @@ nav a:hover::after{
     background:#E5E7EB;
 
 }
+/* ==================================================
+   SERVICIOS
+================================================== */
+
+.services{
+
+    text-align:center;
+
+}
+
+.services h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.services>p{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    color:var(--text-muted);
+
+}
+
+.service-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.service-container article{
+
+    background:var(--surface);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:var(--radius);
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.service-container article:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.service-container h3{
+
+    margin-bottom:20px;
+
+    color:var(--primary);
+
+    font-size:1.4rem;
+
+}
+
+.service-container p{
+
+    color:var(--text-muted);
+
+}
+
+/* ==================================================
+   INTELIGENCIA ARTIFICIAL
+================================================== */
+
+.ai-section{
+
+    background:linear-gradient(
+        180deg,
+        var(--surface),
+        var(--bg)
+    );
+
+    text-align:center;
+
+}
+
+.ai-section h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.ai-section>p{
+
+    max-width:720px;
+
+    margin:0 auto 55px;
+
+    color:var(--text-muted);
+
+}
+
+.ai-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.ai-container article{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:var(--radius);
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.ai-container article:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--accent);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.30);
+
+}
+
+.ai-container h3{
+
+    color:var(--accent);
+
+    margin-bottom:20px;
+
+}
+
+.ai-container p{
+
+    color:var(--text-muted);
+
+}
+
+/* ==================================================
+   PORTAFOLIO
+================================================== */
+
+.portfolio{
+
+    text-align:center;
+
+}
+
+.portfolio h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.portfolio p{
+
+    max-width:700px;
+
+    margin:0 auto 50px;
+
+    color:var(--text-muted);
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.project{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    padding:40px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.project:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--secondary);
+
+}
+
+.project h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.project p{
+
+    color:var(--text-muted);
+
+}

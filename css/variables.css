@@ -1,1 +1,50 @@
+/* ===================================
+   SCRATLOOP DIGITAL
+   Design System
+=================================== */
 
+:root {
+
+    /* Colores de marca */
+    --primary: #00C8FF;
+    --secondary: #2563FF;
+    --accent: #8B3DFF;
+
+    /* Fondos */
+    --bg: #0B1120;
+    --surface: #111827;
+    --surface-light: #1F2937;
+
+    /* Texto */
+    --text: #F8FAFC;
+    --text-muted: #94A3B8;
+
+    /* Estados */
+    --success: #10B981;
+    --danger: #EF4444;
+
+    /* Gradiente oficial */
+    --gradient: linear-gradient(
+        90deg,
+        #00C8FF,
+        #2563FF,
+        #8B3DFF
+    );
+
+    /* Bordes */
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 24px;
+
+    /* Sombras */
+    --shadow-sm: 0 5px 15px rgba(0,0,0,.15);
+    --shadow-md: 0 15px 40px rgba(0,0,0,.20);
+    --shadow-lg: 0 25px 60px rgba(0,0,0,.30);
+
+    /* Transiciones */
+    --transition: .3s ease;
+
+    /* Contenedor */
+    --container: 1200px;
+
+}

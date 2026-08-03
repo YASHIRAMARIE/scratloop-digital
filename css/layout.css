@@ -1,1 +1,331 @@
+/* ===================================
+   SCRATLOOP DIGITAL
+   LAYOUT
+=================================== */
 
+
+/* ==========================
+   HEADER
+========================== */
+
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+
+    background:
+
+    rgba(5,8,22,.75);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+header .container{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+
+nav{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+/* ==========================
+   LOGO
+========================== */
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+.logo img{
+
+    height:65px;
+
+    width:auto;
+
+    transition:var(--transition);
+
+}
+
+
+
+.logo:hover img{
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+/* ==========================
+   MENU
+========================== */
+
+
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+
+
+nav ul a{
+
+
+    position:relative;
+
+
+    font-weight:600;
+
+
+    color:var(--text);
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+nav ul a:hover{
+
+
+    color:var(--primary);
+
+
+}
+
+
+
+/* Línea animada debajo del menú */
+
+
+nav ul a::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:0;
+
+
+    bottom:-8px;
+
+
+    width:0;
+
+
+    height:2px;
+
+
+    background:var(--gradient);
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+nav ul a:hover::after{
+
+
+    width:100%;
+
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+
+    background:#020617;
+
+
+    border-top:
+
+    1px solid rgba(255,255,255,.08);
+
+
+    padding:40px 0;
+
+
+    text-align:center;
+
+
+}
+
+
+
+footer p{
+
+
+    color:var(--text-muted);
+
+
+    font-size:.95rem;
+
+
+}
+
+
+
+/* ==========================
+   MAIN OFFSET
+========================== */
+
+
+main{
+
+
+    padding-top:90px;
+
+
+}
+
+
+
+/* ==========================
+   RESPONSIVE NAV
+========================== */
+
+
+@media(max-width:900px){
+
+
+    header .container{
+
+
+        height:auto;
+
+
+        padding-top:20px;
+
+
+        padding-bottom:20px;
+
+
+    }
+
+
+
+    nav{
+
+
+        flex-direction:column;
+
+
+        gap:25px;
+
+
+    }
+
+
+
+    nav ul{
+
+
+        flex-wrap:wrap;
+
+
+        justify-content:center;
+
+
+        gap:20px;
+
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .logo img{
+
+
+        height:55px;
+
+
+    }
+
+
+
+    nav ul{
+
+
+        flex-direction:column;
+
+
+    }
+
+
+}

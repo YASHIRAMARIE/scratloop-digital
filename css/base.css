@@ -15,11 +15,8 @@ html{
 body{
 
     font-family:"Inter",sans-serif;
-
     background:var(--bg);
-
     color:var(--text);
-
     line-height:1.7;
 
 }
@@ -27,7 +24,6 @@ body{
 img{
 
     display:block;
-
     max-width:100%;
 
 }
@@ -56,7 +52,6 @@ h3,
 h4{
 
     font-family:"Space Grotesk",sans-serif;
-
     font-weight:700;
 
 }
@@ -64,7 +59,53 @@ h4{
 .container{
 
     max-width:var(--container);
-
     margin:auto;
+
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+.button{
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:16px 34px;
+
+    background:var(--gradient);
+
+    color:#fff;
+
+    border-radius:var(--radius-md);
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.secondary{
+
+    background:#fff;
+    color:var(--bg);
+
+}
+
+.secondary:hover{
+
+    background:#E5E7EB;
 
 }

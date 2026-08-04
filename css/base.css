@@ -141,9 +141,9 @@ h3{
 
     width:100%;
 
-    max-width:var(--container);
+    max-width:1360px;
 
-    margin:auto;
+    margin:0 auto;
 
     padding-left:32px;
 

@@ -46,6 +46,20 @@ Soy ScratBot AI.
 
 ¿Cómo puedo ayudarte hoy?
 
+<br><br>
+
+<button class="quick-option">
+🌐 Página Web
+</button>
+
+<button class="quick-option">
+🤖 Inteligencia Artificial
+</button>
+
+<button class="quick-option">
+💬 Cotización
+</button>
+
 </div>
 
 
@@ -145,7 +159,92 @@ messages.scrollHeight;
 
 
 
-function botReply(message){
+async function botReply(message){
+
+
+message = message.toLowerCase();
+
+
+let response = null;
+
+
+
+const faq = [
+
+{
+keywords:["servicios","que hacen","qué hacen"],
+answer:"En Scratloop Digital desarrollamos páginas web, automatizaciones, chatbots con inteligencia artificial e integraciones digitales."
+},
+
+{
+keywords:["web","pagina","página","sitio"],
+answer:"Creamos páginas web modernas, rápidas y optimizadas para ayudarte a crecer."
+},
+
+{
+keywords:["chatbot","bot","asistente"],
+answer:"Nuestro ScratBot AI puede atender clientes, responder preguntas y ayudarte a generar oportunidades de venta."
+},
+
+{
+keywords:["automatizacion","automatización"],
+answer:"Creamos automatizaciones para reducir tareas manuales y mejorar procesos."
+},
+
+{
+keywords:["whatsapp"],
+answer:"Podemos conectar tu sitio web con WhatsApp para facilitar la comunicación con tus clientes."
+}
+
+];
+
+
+
+faq.forEach(item=>{
+
+
+item.keywords.forEach(word=>{
+
+
+if(message.includes(word)){
+
+response=item.answer;
+
+}
+
+
+});
+
+
+});
+
+
+
+if(!response){
+
+
+response =
+"Me gustaría ayudarte mejor. ¿Podrías contarme más sobre lo que necesitas para tu negocio?";
+
+
+}
+
+
+
+setTimeout(()=>{
+
+
+addMessage(
+response,
+"bot"
+);
+
+
+},700);
+
+
+
+}
 
 
 let response =

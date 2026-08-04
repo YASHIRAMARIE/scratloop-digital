@@ -329,3 +329,123 @@ main{
 
 
 }
+/* ==========================
+   MOBILE MENU
+========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:var(--text);
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+
+    nav ul{
+
+
+        display:none;
+
+        width:100%;
+
+        background:var(--surface);
+
+        padding:25px;
+
+        border-radius:var(--radius-lg);
+
+
+    }
+
+
+
+    nav ul.active{
+
+
+        display:flex;
+
+
+    }
+
+
+
+}
+
+
+
+/* ==========================
+   HEADER SCROLL EFFECT
+========================== */
+
+
+header.scrolled{
+
+
+    background:rgba(5,8,22,.95);
+
+    box-shadow:var(--shadow-md);
+
+
+}
+
+
+
+header.scrolled .logo img{
+
+
+    height:65px;
+
+
+}
+
+
+
+/* ==========================
+   SCROLL ANIMATION
+========================== */
+
+
+.hidden-animation{
+
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+
+}
+
+
+
+.show{
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+
+}

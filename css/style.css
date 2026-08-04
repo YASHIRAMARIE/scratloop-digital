@@ -556,3 +556,18 @@
     }
 
 }
+@media(max-width:900px){
+
+    .portfolio-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:350px;
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+}

@@ -1,1 +1,41 @@
-
+{
+  "preguntas": [
+    {
+      "keywords": [
+        "servicios",
+        "que hacen",
+        "qué hacen"
+      ],
+      "respuesta": "En Scratloop Digital desarrollamos páginas web, automatizaciones, chatbots con inteligencia artificial e integraciones digitales para empresas."
+    },
+    {
+      "keywords": [
+        "pagina web",
+        "página web",
+        "sitio web"
+      ],
+      "respuesta": "Creamos páginas web modernas, rápidas y optimizadas para convertir visitantes en clientes."
+    },
+    {
+      "keywords": [
+        "chatbot",
+        "bot",
+        "asistente"
+      ],
+      "respuesta": "Desarrollamos asistentes inteligentes capaces de responder clientes, captar información y automatizar procesos."
+    },
+    {
+      "keywords": [
+        "automatizacion",
+        "automatización"
+      ],
+      "respuesta": "Automatizamos tareas repetitivas para ayudarte a ahorrar tiempo y mejorar la productividad de tu negocio."
+    },
+    {
+      "keywords": [
+        "whatsapp"
+      ],
+      "respuesta": "Podemos integrar WhatsApp para que tus clientes puedan comunicarse directamente con tu negocio."
+    }
+  ]
+}

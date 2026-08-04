@@ -544,3 +544,16 @@
 
 
 }
+/* ==========================
+   LARGE SCREENS
+========================== */
+
+@media(min-width:1200px){
+
+    .portfolio-grid{
+
+        max-width:1000px;
+
+    }
+
+}

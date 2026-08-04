@@ -276,3 +276,35 @@
 
 
 }
+.quick-option{
+
+    display:block;
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:12px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    background:rgba(255,255,255,.05);
+
+    color:var(--text);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.quick-option:hover{
+
+    background:var(--primary);
+
+    color:#000;
+
+}

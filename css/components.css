@@ -264,25 +264,29 @@
 
 .project{
 
-
     background:
-
     rgba(255,255,255,.03);
 
-
     border:
-
     1px solid rgba(255,255,255,.08);
-
 
     border-radius:var(--radius-lg);
 
-
     padding:35px;
-
 
     transition:var(--transition);
 
+    text-align:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:220px;
 
 }
 
